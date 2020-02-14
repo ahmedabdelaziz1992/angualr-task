@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "industrial automation",
+        "link": "www.google.come",
+        "summary": "It is the use of various control systems for operating equipment such as machinery, processes in factories, boilers and heat treating ovens, switching on telephone networks, steering and stabtilization of ships, aircraft and other applications and vehicles with minimal or reduced human intervention, with some processes have been completely automated."
+    },
+    {
+        "id": 2,
+        "title": "digital transformation",
+        "link": "www.google.come",
+        "summary": "It is the profound transformation of business and organizational activities, processes, competencies and models to fully leverage the changes and opportunities of a mix of digital technologies and their accelerating impact across society in a strategic and prioritized way, with present and future"
+    },
+    {
+        "id": 3,
+        "title": "outsourcing",
+        "link": "www.google.come",
+        "summary": "It is a practice used by different companies to reduce costs by transferring portions of work to outside suppliers rather than completing it internally. Outsourcing is an effective cost-saving strategy when used properly."
+    }
+]

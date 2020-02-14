@@ -1,0 +1,6 @@
+<div class="service">
+    <span class="remove" (click)="onRemove(service['id'])">X</span>
+    <h3 class="title slanted"><span class="slanted-content">{{ service.title }}</span></h3>
+    <p class="summary">{{ service.summary }}</p>
+    <a [href]="service.link" class="read-more">Read More</a>
+</div>

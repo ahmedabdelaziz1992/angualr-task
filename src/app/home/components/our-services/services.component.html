@@ -1,0 +1,49 @@
+<section class="our-services">
+    <div class="container">
+        <form class="form" (ngSubmit)="onSubmit(servicesForm)" #servicesForm="ngForm">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="form-field" [ngClass]="{'required': submitted && title.errors?.required}">
+                                <input #title="ngModel" type="text" id="title" class="form-control" name="title" ngModel required>
+                                <label for="title">Title</label>
+                                <p class="form-validation" *ngIf="submitted && title.errors?.required">This field is required</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-field" [ngClass]="{'required': submitted && link.errors?.required}">
+                                <input #link="ngModel" type="text" id="link" class="form-control" name="link" ngModel required>
+                                <label for="link">Link</label>
+                                <p class="form-validation" *ngIf="submitted && link.errors?.required">This field is required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="form-field" [ngClass]="{'required': submitted && summary.errors?.required}">
+                                <textarea #summary="ngModel" class="form-control" id="summary" rows="6" name="summary" ngModel required></textarea>
+                                <label for="summary">summary</label>
+                                <p class="form-validation" *ngIf="submitted && summary.errors?.required">This field is required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary slanted">
+                            <span class="slanted-content">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="services">
+            <div class="row">
+                <app-service *ngFor="let service of services;" [service]="service"></app-service>
+            </div>
+        </div>
+    </div>
+</section>

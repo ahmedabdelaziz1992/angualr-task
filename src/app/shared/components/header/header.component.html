@@ -1,0 +1,43 @@
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#" class="logo-link slanted-content">
+                    <span>Logo</span>
+                </a>
+            </div>
+            <ul #menu class="nav-list" (click)="handleActiveClass($event)">
+                <li class="nav-list-item active">
+                    <a href="#" class="nav-list-link">Industrial Automation</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Digital Transformation</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Outsourcing</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">About</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Knowledge Hub</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Innovation</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Careers</a>
+                </li>
+            </ul>
+            <div class="slogan slanted">
+                <span class="slanted-content">Connect</span>
+
+                <button #menuBtn (click)="handleMenu()" class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>

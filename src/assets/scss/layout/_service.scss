@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the service of the site/application.
+// -----------------------------------------------------------------------------
+
+app-service {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-bottom: 30px;
+    @extend %grid-column;
+    @include make-col(12, 12);
+}
+
+.service {
+    position: relative;
+    text-align: center;
+
+    &:hover {
+        .remove {
+            display: block;
+        }
+    }
+
+    .remove {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1;
+        color: $red;
+        cursor: pointer;
+        display: none;
+    }
+
+    .title {
+        font-size: 2.1875rem;
+        color: $white;
+        background-color: $brand-color;
+        padding: 35px;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .summary {
+        font-size: 1.0625rem;
+        color: $text-color;
+        padding: 20px 35px 10px 10px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    app-service {
+        @include make-col(6, 12);
+    }
+
+    .service {
+        .title {
+            text-align: left;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    app-service {
+        @include make-col(4, 12);
+    }
+}

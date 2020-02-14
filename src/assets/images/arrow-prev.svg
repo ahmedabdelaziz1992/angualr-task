@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 25" width="28" height="25">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Top-Header">
+		<path id="Shape 35 copy" class="shp0" d="M13.34 2L3.92 11.71L26 11.71L26 13.29L3.92 13.29L13.34 23L11.18 23L1 12.5L11.18 2L13.34 2Z" />
+	</g>
+</svg>
